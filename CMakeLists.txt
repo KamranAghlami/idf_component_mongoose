@@ -5,4 +5,5 @@ target_compile_definitions(${COMPONENT_LIB}
     MG_ARCH=MG_ARCH_UNIX
     MG_ENABLE_POLL=0
     MG_IO_SIZE=2048
+    MG_TLS=MG_TLS_MBED
 )
