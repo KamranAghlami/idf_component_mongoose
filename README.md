@@ -1,9 +1,9 @@
 # Mongoose - Embedded Web Server / Embedded Network Library
 
 [![License: GPLv2/Commercial](https://img.shields.io/badge/License-GPLv2%20or%20Commercial-green.svg)](https://opensource.org/licenses/gpl-2.0.php)
-[![Build Status]( https://github.com/cesanta/mongoose/actions/workflows/quicktest.yml/badge.svg)](https://github.com/cesanta/mongoose/actions)
+[![Build Status]( https://github.com/cesanta/mongoose/workflows/build/badge.svg)](https://github.com/cesanta/mongoose/actions)
 [![Code Coverage](https://codecov.io/gh/cesanta/mongoose/branch/master/graph/badge.svg)](https://codecov.io/gh/cesanta/mongoose)
-[![Fuzzing Status](https://oss-fuzz-build-logs.storage.googleapis.com/badges/mongoose.svg)](https://issues.oss-fuzz.com/issues?sort=-opened&can=1&q=proj:mongoose)
+[![Fuzzing Status](https://oss-fuzz-build-logs.storage.googleapis.com/badges/mongoose.svg)](https://bugs.chromium.org/p/oss-fuzz/issues/list?sort=-opened&can=1&q=proj:mongoose)
 [![Gurubase](https://img.shields.io/badge/Gurubase-Ask%20Mongoose%20Guru-006BFF)](https://gurubase.io/g/mongoose)
 
 Mongoose is a network library for C/C++.  It provides event-driven non-blocking
@@ -177,9 +177,6 @@ Technical guides and deep dives into embedded web servers, WebUI integration and
 - [Embedded Web Server: A Comprehensive Guide for Modern Connected Devices](https://mongoose.ws/articles/embedded-web-server-a-comprehensive-guide-for-modern-connected-devices/)
 - [Building Embedded Web Device Dashboards](https://mongoose.ws/articles/building-embedded-web-device-dashboard/)
 - [ESP32 Device Dashboard: A Step-by-Step Guide for Developers](https://mongoose.ws/articles/esp32-device-dashboard/)
-- [How to build an STM32 Web Dashboard](https://mongoose.ws/articles/stm32-device-dashboard/)
-- [STM32 WebSocket Guide](https://mongoose.ws/articles/stm32-websocket-guide/)
-- [Web File Manager on STM32, ESP32 and Embedded Linux](https://mongoose.ws/articles/building-a-web-file-manager-on-stm32-esp32-embedded-linux/)
 
 
 ## Contributions
