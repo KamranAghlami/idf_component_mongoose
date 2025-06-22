@@ -1,4 +1,4 @@
-idf_component_register(SRCS "mongoose.c" INCLUDE_DIRS ".")
+idf_component_register(SRCS "mongoose.c" INCLUDE_DIRS "." REQUIRES mbedtls)
 
 target_compile_definitions(${COMPONENT_LIB}
   PUBLIC
