@@ -4183,7 +4183,7 @@ void mg_mgr_init(struct mg_mgr *mgr) {
 #elif MG_ARCH == MG_ARCH_UNIX
   // Ignore SIGPIPE signal, so if client cancels the request, it
   // won't kill the whole process.
-  signal(SIGPIPE, SIG_IGN);
+  // signal(SIGPIPE, SIG_IGN);
 #elif MG_ENABLE_TCPIP_DRIVER_INIT && defined(MG_TCPIP_DRIVER_INIT)
   MG_TCPIP_DRIVER_INIT(mgr);
 #endif
