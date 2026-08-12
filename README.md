@@ -5,32 +5,31 @@
 [![Code Coverage](https://codecov.io/gh/cesanta/mongoose/branch/master/graph/badge.svg)](https://codecov.io/gh/cesanta/mongoose)
 [![Fuzzing Status](https://oss-fuzz-build-logs.storage.googleapis.com/badges/mongoose.svg)](https://issues.oss-fuzz.com/issues?sort=-opened&can=1&q=proj:mongoose)
 
-Mongoose is a network library for C/C++.  It provides event-driven non-blocking
-APIs for TCP, UDP, HTTP, WebSocket, MQTT, and other protocols.  It is designed
-for connecting devices and bringing them online. On the market since 2004, used
-by vast number of open source and commercial products - it even runs on the
-International Space Station!  Mongoose makes embedded network programming fast,
-robust, and easy. Features include:
+<img src="https://mongoose.ws/images/logo.svg" width="48" height="48"
+align="left" style="float:left;" />
+Two files. Drop `mongoose.c` and `mongoose.h` into any C/C++ project and get a
+full network stack — HTTP, WebSocket, MQTT, TLS, firmware OTA
+updates, device dashboard — on any microcontroller or desktop OS.
+
+On the market since 2004, used by vast number of open source and commercial
+products - it even runs on the International Space Station! Features include:
 
 - Cross-platform:
-  - works on Linux/UNIX, MacOS, Windows, Android
-  - works on ST, NXP, ESP32, Nordic, TI, Microchip, Infineon, Renesas and other chips
+  - works on Linux/UNIX, MacOS, Windows, Android, STM32, NXP, ESP32, Nordic, TI, Microchip, Infineon, Renesas and other chips
   - write code once - and it'll work everywhere
   - ideal for the unification of the network infrastructure code across company
-- Built-in protocols: plain TCP/UDP, SNTP, HTTP, MQTT, Websocket, and other
+- Built-in protocols: plain TCP/UDP, SNTP, HTTP, MQTT, Websocket, Modbus-TCP, and other
 - Asynchronous DNS resolver
 - Tiny static and run-time footprint
 - Source code is both ISO C and ISO C++ compliant
-- Easy to integrate: just copy [mongoose.c](https://raw.githubusercontent.com/cesanta/mongoose/master/mongoose.c)
-  and [mongoose.h](https://raw.githubusercontent.com/cesanta/mongoose/master/mongoose.h) files to your source tree
-- Built-in TCP/IP stack with drivers for bare metal or RTOS systems
-   - Available drivers: STM32F, STM32H; NXP RT1xxx; TI TM4C; Microchip SAME54; Wiznet W5500
-   - A complete Web device dashboard on bare metal ST Nucleo boards is only 6 files
-   - For comparison, a CubeIDE generated HTTP example is 400+ files
-- Can run on top of an existing TCP/IP stack with BSD API, e.g. lwIP, Zephyr, Azure, etc
+- Very easy to integrate
+- Own TCP/IP stack for bare metal / RTOS, or run on top of any existing one (lwIP, Zephyr, ...)
 - Built-in TLS 1.3 ECC stack. Also can use external TLS libraries - mbedTLS, OpenSSL, or other
 - Does not depend on any other software to implement networking
-- Built-in firmware updates for STM32 H5, STM32 H7
+- Built-in firmware updates for STM32 H5, STM32 H7, NXP IMXRT, RP2040/2350, ESP32 and more
+- Commercial support with proactive security updates; [CRA-compliant](https://mongoose.ws/security/cra-compliance/)
+
+Mongoose is ideal for IoT devices, embedded web servers, OTA updates, MQTT telemetry, secure device dashboards, REST APIs on microcontrollers
 
 See https://mongoose.ws/ for complete documentation, videos, case studies, etc.
 
@@ -198,6 +197,10 @@ We take security seriously:
   have specific security requirements and run independent security audits,
   of which we get notified and in case of any issue, act similar to (3).
 
+## How to report security vulnerabilities
+
+Please report via https://github.com/cesanta/mongoose/security/advisories.
+Do NOT create a github issue.
 
 ## Articles
 
@@ -211,6 +214,12 @@ Technical guides and deep dives into embedded web servers, WebUI integration and
 - [Web dashboard on Zephyr RTOS](https://mongoose.ws/articles/web-dashboard-on-zephyr-rtos/)
 - [Limiting TCP/IP RAM usage on STM32](https://mongoose.ws/articles/limiting-tcpip-ram-usage-on-stm32/)
 - [STM32 Ethernet explained](https://mongoose.ws/articles/stm32-ethernet-explained/)
+- [MQTT on a Microcontroller](https://mongoose.ws/articles/mqtt-on-a-microcontroller/)
+- [STM32 OTA Firmware Update](https://mongoose.ws/articles/stm32-ota-firmware-update/)
+- [RP2350 OTA Firmware Update](https://mongoose.ws/articles/rp2350-ota-firmware-update/)
+- [STM32 Ethernet and caches](https://mongoose.ws/articles/stm32-ethernet-and-cache/)
+- [NXP RW612 OTA Firmware Update](https://mongoose.ws/articles/rw612-ota-firmware-update/)
+- [lwIP vs Mongoose - TCP/IP Stack Integration Benchmark](https://mongoose.ws/articles/lwip-vs-mongoose-tcpip-stack-integration/)
 
 
 ## Contributions
